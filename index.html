@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="quiries.css" />
+  </head>
+  <body>
+    <div class="contact-container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+          <!--Adding Horisontal line -->
+          <hr />
+        </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="1ca6d35a-ad43-4d52-8212-263bb281d2d4"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email"
+          class="contact-inputs"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="contact-inputs"
+          required
+        ></textarea>
+        <button type="submit">
+          Submit <img src="assets/arrow_icon.png" alt="" />
+        </button>
+      </form>
+      <div class="contact-right">
+        <img src="assets/right_img.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
+<!-- 
+  - Use web3forms.com to add an email url to receive forms in email
+  - scroll down and select html ( orange 5 icon)
+  - create access key
+  - add your email id (added kemtton'email: kemtton.enquiries@gmail.com)
+  - then create access button and chekc email
+  - get the access key from the email sent by the web3forms
+  - scroll down in the website itself to get the link of action link to copy it in html and paste in the form tag
+  - then goback to the website and copy the input field which contact the access key input for the submitted email
+  - paste your access key from your email then YOU ARE READY
+
+ -->
